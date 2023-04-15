@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('./iStock-824845572-1.jpg')no-repeat center center/cover;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    align-items: center;
+
+    background-size: cover;
+        background-position: center;
+ /* background-color: rgb(8, 25, 54);   */
+    /* font-family: 'Varela Round', sans-serif;
+    color:rgb(179, 131, 252); */
+    font-family: 'Josefin Sans', sans-serif;
+    overflow: hidden; 
+}
+
+.name{
+    height: 10vh;
+    padding-top:20px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.contains{
+    /* background-color: #25CCF7; */
+    border-radius: 0px 0px 20px 20px;
+    height: 50%;
+}
+.name h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 50px;
+    padding-right: 10px;
+}
+.input{
+    display: flex;
+    flex-direction: row;
+    height: 20vh;
+    width: 30vw;
+    justify-content: flex-start;
+    align-items: center;
+   
+}
+#cityname{
+    position: relative;
+    width: 30vw;
+    height: 7vh;
+    margin: 1vh;
+    font-size: 30px;
+    border: 3px solid black;
+    text-align: center;
+    color:#192a56;
+    background-color: black;
+}
+#submit{
+    width: 50px;
+    height: 50px;
+    margin: 1vh;
+    background-color: white;
+    border-radius: 10%;
+}
+#submit:hover{
+    cursor: pointer;
+    transition: all 0.3s linear;
+    color: white;
+}
+#card--container{
+    height: 65vh;
+
+}
+.result{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 1vh;
+    width: 30vw;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.549);
+    border-radius: 20px;
+    
+}
+
+@media screen and (max-width:609px)
+{
+    .result{
+        width: 50vw;
+    }
+}
+@media screen and (max-width:360px)
+{
+    
+}
+#overlay{
+    position: absolute;
+    width: 400px;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 40%;
+    z-index: -1;
+    
+}
+
+    
+
+.res1{
+    opacity: 0%;
+}
+.result div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#city{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    height: 10vh;
+    width: 100%;
+    font-size: 45px;
+    padding-top: 10px;
+    margin-top: 0px;
+    
+    
+    text-align: center;
+    background-color:#88ceda;
+    border-radius: 20px 20px 0 0;
+    
+}
+#sky{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    height: 10vh;
+    font-size: 30px;
+    width: 100%;
+    padding-top: 15px;
+    text-align: center;
+    color: white;
+}
+#temp{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    height: 10vh;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+#wind{
+    font-size: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    height: 10vh;
+    color: white;
+}
+#Humidity{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    height: 10vh;
+    color: white;
+}
+#icon img{
+
+    width: auto;
+    height: auto;
+}
+
+.contact{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items :center;
+    padding-bottom: 10px;
+}
+a{
+    padding: 20px;
+}
+a:hover{
+    transition: all 0.3s linear;
+    color:rgb(179, 131, 252);
+    transform: scale(1.5);
+}
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
+
+html {
+  font-size: 62.5%; /*62.5% = 10px; to make it easier to calculate REM units.*/
+}
+body {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 2.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  /* background-color: #faedcd; */
+  height: 100vh;
+}
+#clock {max-width: 600px;}
+
+/* for smaller screens below 700px */
+@media only screen and (max-width: 700px) {
+  body {font-size: 1.8rem;}
+}
+
+/*for smaller screens below 300px*/
+@media only screen and (max-width: 300px) {
+  body {font-size: 1.6rem;}
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title class="weat">Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/3a96c6052d.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="bg">
+    <div class="name">
+        <h1 style="color: white;">Weather App</h1>
+        <img id="ico" src="./sun-cloud.png" width="70px" height="70px" alt="ico">
+    </div>
+    <div class="input">
+        <input id="cityname" type="text" placeholder="Search Weather" style="font-size: 25px; border: 2px solid rgb(22, 22, 119)" />
+        <img src="search-icon.svg" alt="" id="submit">
+    </div>
+    <div id="overlay"></div>
+    <div id="card--container">
+        <div class="result">
+            <p  id="city" >City</p>
+            <div class="contains">
+                <span id="icon"></span>
+                <p id="sky">Sky condition:</p>
+                <p id="temp">Temperature:</p>
+                <p id="wind">Wind speed:</p>
+                <p id="Humidity">Humidity:</p>
+            </div>
+        </div>
+    </div>
+    <div id="clock">
+        <h1 id="date-time"></h1>
+      </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
